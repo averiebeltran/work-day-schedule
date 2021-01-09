@@ -10,9 +10,9 @@ $(document).ready(function() {
         console.log(index, val);
         const table = $(".container");
         table.append(`<div class="row">
-                        <div id="hour-` + index + `" class="time">` + val + `</div>
+                        <div id="hour-` + index + `" class="hour">` + val + `</div>
                         <textarea></textarea>
-                        <button type="button" class="btn saveBtn">Save <i class="fas fa-share-square"></i></button>
+                        <button type="button" class="btn btn-secondary">Save <i class="fas fa-share-square"></i></button>
                     </div>`);
     });
 
