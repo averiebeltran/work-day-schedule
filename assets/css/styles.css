@@ -23,15 +23,30 @@ body {
 
 .row {
     white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
 }
 
 .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    width: 10%;
+
 }
+
+textarea {
+    width: 70%;
+    height: 70px;
+    margin-right: 10px;
+}
+
+button {
+    width: 15%;
+    height: 50px;
+    color: white;
+}
+
 
 .past {
     background-color: #d3d3d3;
@@ -46,18 +61,4 @@ body {
 .future {
     background-color: #77dd77;
     color: white;
-}
-
-.saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #5d478b;
-    color: white;
-}
-
-.saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-
 }
