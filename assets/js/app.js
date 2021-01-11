@@ -4,7 +4,7 @@ $(document).ready(function() {
     const currentDate = dateTimeArr1[0];
     const currentHour = moment().hour();
     const table = $(".container");
-    const displayHours = ["1pm","2pm","3pm","4pm","5pm","6pm","7pm","8pm","9pm","10pm"];
+    const displayHours = ["9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm"];
 
     $("#currentDay").html(currentDate);
 
@@ -37,16 +37,16 @@ $(document).ready(function() {
 
     function currentHourCheck(currentHour) {
         switch(currentHour) {
+            case "8am": return 8;
+            case "9am": return 9;
+            case "10am": return 10;
+            case "11am": return 11;
+            case "12pm": return 12;
             case "1pm": return 13;
             case "2pm": return 14;
             case "3pm": return 15;
             case "4pm": return 16;
             case "5pm": return 17;
-            case "6pm": return 18;
-            case "7pm": return 19;
-            case "8pm": return 20;
-            case "9pm": return 21;
-            case "10pm": return 22;
         }
     }
 
